@@ -1,28 +1,19 @@
-Tarea 1 — CRUD en PostgreSQL con Python
-Desarrollar una aplicación de consola en Python que gestione una base de datos PostgreSQL sin usar ningún framework ORM (solo la librería psycopg2).
+Tarea 1 - CRUD en PostgreSQL con Python
 
-Requerimientos técnicos
-1. Base de datos: Crear una base de datos llamada tarea1 en PostgreSQL.
+Aplicación de consola en Python para gestionar una base de datos de alumnos en PostgreSQL, desarrollada sin utilizar frameworks ORM (únicamente utilizando la librería `psycopg2`).
 
-2. Tabla alumno con los siguientes campos:
+Requerimientos Técnicos
+- Python 3.x
+- PostgreSQL
+- Librería `psycopg2-binary`
 
-id — SERIAL PRIMARY KEY
-carnet — VARCHAR(15) UNIQUE NOT NULL
-nombre — VARCHAR(100) NOT NULL
-apellido — VARCHAR(100) NOT NULL
-carrera — VARCHAR(150)
-email — VARCHAR(150)
-telefono — VARCHAR(20)
-fecha_registro — DATE DEFAULT CURRENT_DATE
-3. Operaciones requeridas (menú interactivo en consola):
+preparación del Entorno
+1. Crear una base de datos en PostgreSQL llamada `tarea1`.
+2. Instalar la dependencia necesaria ejecutando en la terminal:
+   ```bash
+   pip install psycopg2-binary
+3. Configurar las credenciales de PostgreSQL (usuario y contraseña) en el diccionario DB_config dentro del archivo main.py.
 
-Agregar alumno
-Modificar datos de un alumno (buscar por carnet)
-Listar todos los alumnos
-Eliminar alumno (por carnet)
-Salir
-4. Restricciones:
-
-Solo usar Python puro + psycopg2
-No usar SQLAlchemy, Django ORM, ni ningún otro ORM/framework
-El script debe crear la tabla automáticamente si no existe al iniciar
+Ejecución
+Para iniciar la aplicación y el menú interactivo, ejecuta el siguiente comando en la terminal:
+python main.py

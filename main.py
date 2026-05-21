@@ -4,7 +4,7 @@ DB_config={
     "host": "localhost",
     "database":"tarea1",
     "user":"postgres",
-    "password":"orellana5108p",
+    "password":"123456",
 }
 
 def conexion():
